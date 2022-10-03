@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="nav">
+    <p class="page-title">RepoViewer</p>
+    <div class="input-area">
+      <input
+        class="input-style"
+        placeholder="Enter the GitHub Username"
+        (keyup.enter)="getUserRepository()"
+        (keyup)="getUsername($event)"
+      />
+      <button class="btn" (click)="getUserRepository()">
+        Get Repositories
+      </button>
+    </div>
+  </div>
+  <div class="spinnerClass">
+    <ng-container *ngIf="loading" class="spinner">
+      <mat-spinner></mat-spinner>
+    </ng-container>
+  </div>
+  <section class="userdata-section" *ngIf="dataAvailable">
+    <app-user-info></app-user-info>
+    <app-user-repo></app-user-repo>
+  </section>
+</div>

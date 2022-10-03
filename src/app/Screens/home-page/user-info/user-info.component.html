@@ -1,0 +1,16 @@
+<div class="userinfo-container">
+  <img src="{{ userInfo.avatar_url }}" class="profile-img" />
+  <div>
+    <h1>{{ userInfo.name }}</h1>
+    <h4>{{ userInfo.bio }}</h4>
+    <h4>{{ userInfo.location }}</h4>
+    <h4>{{ userInfo.twitter_username }}</h4>
+  </div>
+</div>
+<div class="githubLink">
+  <a
+    style="font-size: 20px; margin-top: -20px; color: #ccd6f6"
+    href="{{ userInfo.html_url }}"
+    >{{ userInfo.html_url }}</a
+  >
+</div>

@@ -1,0 +1,19 @@
+.userinfo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+.githubLink {
+  display: flex;
+  justify-content: center;
+}
+h1,
+h4 {
+  color: #ccd6f6;
+}
